@@ -34,7 +34,7 @@
   new Vue({
     el: '#mobile-code-field',
     data: {
-      mobile: '1',
+      mobile: '{{ Admin::user()->mobile }}',
       count_down: 60,
       code_text: '发送验证码'
     },
